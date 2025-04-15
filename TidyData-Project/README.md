@@ -19,3 +19,12 @@ However, one dependency in this notebook is the need of having all the following
 
 plot 1 - heatmap: Representation of male and female athletes across 10 sports
 ![Alt text](https://github.com/lissa-telles-chaves/Telles_python_portfolio/blob/63742ec03972da48551988d79950eb8b7c3ab15f/TidyData-Project/malefemalerepsports.png)
+
+plot 2 - stacked bar plot: Number of Medals by Sport
+
+![Alt text](https://github.com/lissa-telles-chaves/Telles_python_portfolio/blob/63742ec03972da48551988d79950eb8b7c3ab15f/TidyData-Project/stackedbarplot_medalxsport.png)
+
+### references:
+Tidy Data by Hadley Wickham: https://vita.had.co.nz/papers/tidy-data.pdf
+Pandas_Cheat_Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+
