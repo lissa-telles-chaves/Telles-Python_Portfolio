@@ -15,7 +15,7 @@ Welcome! This app lets you explore NER by defining YOUR own custom labels and ru
 You can upload a file or input your own text, then add patterns (e.g., keywords or phrases) and assign labels to them.
 """)
 # make introduction to NER, just in case they are not super familiar
-st.header("But, what is NER?")
+st.markdown("### But, what is NER?")
 st.write("""
 NER stands for Named Entity Recognition.
              it's a subtask of Natural Language Processing (NLP)
@@ -23,7 +23,8 @@ NER stands for Named Entity Recognition.
 """)
 st.header("Instructions:")
 st.write("""
-Go to the side bar to first input the text and then go there to add your customized rules.
+Go to the side bar to first input the text then go to the box in step 2 to add your customized rules. Remember to always follow the following format as if you are coding (because you kind of are):
+         {"label": "insert the class you want to say the word belongs to", "pattern": "insert the word"}
 """)
 # Sidebar for inputs 
 st.sidebar.header("Step 1: Input your text")
@@ -47,7 +48,7 @@ if not text:
 
 # Sidebar for custom entity patterns 
 st.sidebar.header("Step 2: Define Custom Entities")
-st.sidebar.markdown("Enter patterns as JSON list (e.g., `[{'label': 'CEO', 'pattern': 'Elon Musk'}]`)")
+st.sidebar.markdown("Enter patterns as JSON list (e.g., `[{'label': 'Actor', 'pattern': 'Adam Sandler'}]`)")
 pattern_input = st.sidebar.text_area("Custom patterns:", value="""[
  {"label": "CLASS", "pattern": "Elements of Computing II"},
  {"label": "PROFESSOR", "pattern": "Dr.Smiley"}
